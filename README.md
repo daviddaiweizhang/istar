@@ -36,9 +36,9 @@ Using GPUs is highly recommended.
     - Column 2: x-coordinate (horizontal axis). Must be in the same space as axis-1 (column) of the array indices of pixels in `he-raw.jpg`.
     - Column 2: y-coordinate (vertical axis). Must be in the same space as axis-0 (row) of the array indices of pixels in `he-raw.jpg`.
 - `pixel-size-raw.txt`: Side length (in micrometers) of pixels in `he-raw.jpg`. This value is usually between 0.1 and 1.0.
-    - For [Visium](support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial) data, this value can be approximated by `8000 / 2000 * tissue_hires_scalef`, where `tissue_hires_scalef` is stored in `scalefactors_json.json`.
+    - For [Visium](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial) data, this value can be approximated by `8000 / 2000 * tissue_hires_scalef`, where `tissue_hires_scalef` is stored in `scalefactors_json.json`.
 - `radius-raw.txt`: Number of pixels per spot radius in `he-raw.jpg`.
-    - For [Visium](support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial) data, this value can be computed by `spot_diameter_fullres * 0.5`, where `spot_diameter_fullres` is stored in `scalefactors_json.json`, and should be close to `55 * 0.5 / pixel_size_raw`.
+    - For [Visium](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial) data, this value can be computed by `spot_diameter_fullres * 0.5`, where `spot_diameter_fullres` is stored in `scalefactors_json.json`, and should be close to `55 * 0.5 / pixel_size_raw`.
 
 # License
 
