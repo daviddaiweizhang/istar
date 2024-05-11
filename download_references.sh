@@ -3,8 +3,8 @@ set -e
 
 prefix="data/markers/"
 
-source_celltype="https://upenn.box.com/shared/static/t07qhkych3sx2ak1f19c9ptphssb1gd0.tsv"
-source_tls="https://upenn.box.com/shared/static/9gfiq5yyuv9ynfgkb5df7z64kurtekjl.txt"
+source_celltype="https://upenn.box.com/shared/static/us6015dt0bpe44w8ar6syutmbfgsl44u.tsv"
+source_tls="https://upenn.box.com/shared/static/97bch259c42s8tbyr6v2iu5plz1jbkz5.txt"
 
 target_celltype="${prefix}celltype.tsv"
 target_tls="${prefix}tls.txt"
