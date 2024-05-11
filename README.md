@@ -11,7 +11,14 @@ Inferring super-resolution tissue architecture by integrating spatial transcript
 *Nature Biotechnology* (2024).
 https://doi.org/10.1038/s41587-023-02019-9
 
-# Get Started
+## iStar WebUI (Update 2024-05-11)
+
+A web version of iStar is now available at [istar.live](http://istar.live).
+New features will be continuously added here as we develop expansions of the model.
+Please contact [Daiwei (David) Zhang](mailto:daiwei.zhang@pennmedicine.upenn.edu)
+if you encounter any issues or have any questions.
+
+## Get Started
 
 To run the demo,
 ```python
@@ -21,7 +28,7 @@ pip install -r requirements.txt
 ```
 Using GPUs is highly recommended.
 
-## Data format
+### Data format
 
 - `he-raw.jpg`: Raw histology image
 - `cnts.tsv`: Gene count matrix.
@@ -40,14 +47,14 @@ Using GPUs is highly recommended.
 - `radius-raw.txt`: Number of pixels per spot radius in `he-raw.jpg`.
     - For [Visium](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial) data, this value can be computed by `spot_diameter_fullres * 0.5`, where `spot_diameter_fullres` is stored in `scalefactors_json.json`, and should be close to `55 * 0.5 / pixel_size_raw`.
 
-# License
+## License
 
 The software package is licensed under GPL-3.0.
 For commercial use, please contact
 [Daiwei (David) Zhang](mailto:daiwei.zhang@pennmedicine.upenn.edu) and
 [Mingyao Li](mailto:mingyao@pennmedicine.upenn.edu).
 
-# Acknowledgements
+## Acknowledgements
 
 The codes for iStar are written by Daiwei (David) Zhang and under active development.
 Please open an issue on GitHub if you have any questions about the software package.
