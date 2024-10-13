@@ -58,10 +58,12 @@ python differential.py ${prefix}
 # visualize spot-level gene expression data
 python plot_spots.py ${prefix}
 
-# cell type inference
-python pixannot.py ${prefix} data/markers/celltype.tsv ${prefix}markers/celltype/
-cp -r ${prefix}markers/celltype/threshold010/* ${prefix}markers/celltype/
-python enrich.py ${prefix}clusters-gene/ ${prefix}markers/celltype/
+# # cell type inference
+# # see data/markers/cell-type-template.tsv for an example of a cell type reference panel
+# python pixannot.py ${prefix} data/markers/cell-type.tsv ${prefix}markers/cell-type/
+# cp -r ${prefix}markers/cell-type/threshold010/* ${prefix}markers/cell-type/
+# python enrich.py ${prefix}clusters-gene/ ${prefix}markers/cell-type/
 
-# TLS detection
-python marker_score.py ${prefix} data/markers/tls.txt ${prefix}markers/tls
+# # user-defined tissue structure signature scores
+# # see data/markers/signature-score-template.tsv for an example of a signature score reference panel
+# python marker_score.py ${prefix} data/markers/signature-score.txt ${prefix}markers/signature-score
