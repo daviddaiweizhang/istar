@@ -1,7 +1,7 @@
-# Inferring Supper-Resolution Tissue Architecture by Integrating Spatial Transcriptomics and Histology
+# Inferring Super-Resolution Tissue Architecture by Integrating Spatial Transcriptomics and Histology
 
 This software package implements iStar
-(Inferring Supper-resolution Tissue ARchitecture),
+(Inferring Super-resolution Tissue ARchitecture),
 which enhances the spatial resolution of spatial transcriptomic data
 from a spot-level to a near-single-cell level.
 The iStar method is presented in the following paper:
